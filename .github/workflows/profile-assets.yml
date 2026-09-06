@@ -1,0 +1,72 @@
+# Builds every generated image the profile README embeds, and publishes them to
+# the `output` branch as plain static files.
+#
+# Why this exists: the stats, top-languages, activity-graph and trophy cards used
+# to be hot-linked from third-party Vercel apps. Those went down (503
+# DEPLOYMENT_PAUSED / 402 Payment required) and took four images on the profile
+# with them. Rendering here means the README only ever points at files in this
+# repo — nothing to pay for, nothing that can be paused.
+#
+# Everything lands in a single `dist/` and is published in one commit, so the
+# snake and the cards can never overwrite each other.
+
+name: Profile assets
+
+on:
+  schedule:
+    # Twice a day, off the hour — the top of the hour is the busiest slot on
+    # GitHub's shared scheduler and gets queued behind everyone else's cron.
+    - cron: "17 3,15 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+# Never let a push-triggered run and a scheduled run publish at the same time.
+concurrency:
+  group: profile-assets
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Render and publish
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Render stat cards
+        env:
+          # The token Actions provides automatically - no PAT, no secret to set up.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_USER: ${{ github.repository_owner }}
+          OUT_DIR: dist
+        run: node .github/scripts/generate-cards.mjs
+
+      - name: Render contribution snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake.svg
+            dist/snake-dark.svg?palette=github-dark
+
+      - name: Show what will be published
+        run: ls -la dist
+
+      # Runs only if every render above succeeded, so a GitHub API hiccup leaves
+      # the last known-good assets on `output` rather than publishing a gap.
+      - name: Publish to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

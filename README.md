@@ -6,7 +6,7 @@
 
   All links are live. Optional additions:
     - A portfolio badge, if you build a personal site
-    - Run .github/workflows/snake.yml once so the snake SVG renders
+    - Run .github/workflows/profile-assets.yml once to build the snake + stat cards
   ============================================================
 -->
 
@@ -139,8 +139,8 @@ Full-stack platform that normalizes grocery prices to a per-kg / per-litre basis
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=Sanchit-Ras&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=tokyonight&bg_color=0D1117&title_color=7AA2F7&icon_color=7AA2F7" alt="stats" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sanchit-Ras&layout=compact&langs_count=8&hide_border=true&theme=tokyonight&bg_color=0D1117&title_color=7AA2F7" alt="top languages" />
+<img height="165" src="https://raw.githubusercontent.com/Sanchit-Ras/Sanchit-Ras/output/stats.svg" alt="stats" />
+<img height="165" src="https://raw.githubusercontent.com/Sanchit-Ras/Sanchit-Ras/output/top-langs.svg" alt="top languages" />
 
 <br/><br/>
 
@@ -148,7 +148,7 @@ Full-stack platform that normalizes grocery prices to a per-kg / per-litre basis
 
 <br/><br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Sanchit-Ras&theme=tokyo-night&bg_color=0D1117&color=7AA2F7&line=7AA2F7&point=FFFFFF&hide_border=true&area=true" width="95%" alt="activity graph" />
+<img src="https://raw.githubusercontent.com/Sanchit-Ras/Sanchit-Ras/output/activity.svg" width="95%" alt="activity graph" />
 
 </div>
 
@@ -168,7 +168,7 @@ Full-stack platform that normalizes grocery prices to a per-kg / per-litre basis
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=Sanchit-Ras&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=8&margin-h=8" alt="trophies" />
+<img src="https://raw.githubusercontent.com/Sanchit-Ras/Sanchit-Ras/output/trophies.svg" width="95%" alt="trophies" />
 
 </div>
 
@@ -186,7 +186,11 @@ Always up for a conversation about backend systems, ML pipelines, or a good cach
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/Sanchit-Ras/Sanchit-Ras/output/snake.svg" alt="snake animation" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sanchit-Ras/Sanchit-Ras/output/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sanchit-Ras/Sanchit-Ras/output/snake.svg" />
+  <img src="https://raw.githubusercontent.com/Sanchit-Ras/Sanchit-Ras/output/snake.svg" alt="snake animation" />
+</picture>
 
 <sub>⭐️ From <a href="https://github.com/Sanchit-Ras">Sanchit-Ras</a></sub>
 
