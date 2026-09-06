@@ -32,12 +32,12 @@
 
 I'm a **CS undergrad at Bennett University** *(CGPA 9.34, Class of '27)* who likes building things that hold up under real traffic — not just things that run on my laptop.
 
-- 🔭 Currently a **Software Engineering Intern @ Escecion Technologies (DevsLane)** — shipping React + TypeScript frontends and Django backends, across **40+ merged PRs**
-- 🧠 **387+ problems** solved on LeetCode — DSA is a daily habit, not a season
-- ⚡ Recently: cut a search endpoint from **~45s → under 1s** with a Redis caching layer
+- 🔭 Currently a **Software Engineering Intern @ Escecion Technologies (DevsLane)** — shipping React + TypeScript frontends and Django backends, across <img src="https://img.shields.io/badge/40%2B_merged_PRs-BB9AF7?style=flat-square&labelColor=0D1117" alt="40+ merged PRs" />
+- 🧠 <img src="https://img.shields.io/badge/387%2B_problems-FFA116?style=flat-square&labelColor=0D1117" alt="387+ problems" /> solved on LeetCode — DSA is a daily habit, not a season
+- ⚡ Recently: cut a search endpoint from <img src="https://img.shields.io/badge/~45s-under_1s-9ECE6A?style=flat-square&labelColor=0D1117" alt="~45s → under 1s" /> with a Redis caching layer
 - 🌱 Going deeper into **distributed systems, system design, and Go**
-- 🎯 Open to **SDE Internships (Jan – Jun 2027)** — let's talk
-- 🏆 Rank **13 / 404 teams** at Smart Bennett Hackathon · **Dean's List** awardee
+- 🎯 Open to <img src="https://img.shields.io/badge/SDE_Internships_%28Jan_%E2%80%93_Jun_2027%29-F7768E?style=flat-square&labelColor=0D1117" alt="SDE Internships (Jan – Jun 2027)" /> — let's talk
+- 🏆 Rank <img src="https://img.shields.io/badge/13_%2F_404_teams-9ECE6A?style=flat-square&labelColor=0D1117" alt="13 / 404 teams" /> at Smart Bennett Hackathon · <img src="https://img.shields.io/badge/Dean%27s_List-E0AF68?style=flat-square&labelColor=0D1117" alt="Dean's List" /> awardee
 
 <br clear="right"/>
 
