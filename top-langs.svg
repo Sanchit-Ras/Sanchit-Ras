@@ -1,0 +1,68 @@
+<svg width="360" height="195" viewBox="0 0 360 195" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Most used languages">
+  <title>Most used languages</title>
+  <style>
+    .t { font: 600 18px 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif; fill: #7AA2F7 }
+    .l { font: 400 14px 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif; fill: #A9B1D6 }
+    .v { font: 600 14px 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif; fill: #C0CAF5 }
+    .m { font: 400 11px 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif; fill: #565F89 }
+    .fade { animation: fade .6s ease-in-out }
+    @keyframes fade { from { opacity: 0 } to { opacity: 1 } }
+  </style>
+  <rect x="0.5" y="0.5" rx="8" width="359" height="194" fill="#0D1117" stroke="#21262D"/>
+  <text class="t fade" x="25" y="35">Most Used Languages</text>
+  <g class="fade" transform="translate(25 55)">
+    <mask id="barmask"><rect x="0" y="0" width="310" height="10" rx="5" fill="#fff"/></mask>
+    <g mask="url(#barmask)">
+      <rect x="0" y="0" width="310" height="10" fill="#1F2335"/>
+      <rect x="0" y="0" width="308.1" height="10" fill="#e34c26"/>
+      <rect x="308.1" y="0" width="0.56" height="10" fill="#b07219"/>
+      <rect x="308.66" y="0" width="0.42" height="10" fill="#3572A5"/>
+      <rect x="309.07" y="0" width="0.37" height="10" fill="#3178c6"/>
+      <rect x="309.44" y="0" width="0.33" height="10" fill="#f1e05a"/>
+      <rect x="309.77" y="0" width="0.21" height="10" fill="#663399"/>
+      <rect x="309.99" y="0" width="0.01" height="10" fill="#384d54"/>
+      <rect x="310" y="0" width="0" height="10" fill="#3B2F63"/>
+    </g>
+  </g>
+  <g class="fade" transform="translate(25 95)">
+    <circle cx="5" cy="-4" r="5" fill="#e34c26"/>
+    <text class="l" x="18" y="0">HTML</text>
+    <text class="m" x="140" y="0" text-anchor="end">99.39%</text>
+  </g>
+  <g class="fade" transform="translate(195 95)">
+    <circle cx="5" cy="-4" r="5" fill="#b07219"/>
+    <text class="l" x="18" y="0">Java</text>
+    <text class="m" x="140" y="0" text-anchor="end">0.18%</text>
+  </g>
+  <g class="fade" transform="translate(25 120)">
+    <circle cx="5" cy="-4" r="5" fill="#3572A5"/>
+    <text class="l" x="18" y="0">Python</text>
+    <text class="m" x="140" y="0" text-anchor="end">0.14%</text>
+  </g>
+  <g class="fade" transform="translate(195 120)">
+    <circle cx="5" cy="-4" r="5" fill="#3178c6"/>
+    <text class="l" x="18" y="0">TypeScript</text>
+    <text class="m" x="140" y="0" text-anchor="end">0.12%</text>
+  </g>
+  <g class="fade" transform="translate(25 145)">
+    <circle cx="5" cy="-4" r="5" fill="#f1e05a"/>
+    <text class="l" x="18" y="0">JavaScript</text>
+    <text class="m" x="140" y="0" text-anchor="end">0.11%</text>
+  </g>
+  <g class="fade" transform="translate(195 145)">
+    <circle cx="5" cy="-4" r="5" fill="#663399"/>
+    <text class="l" x="18" y="0">CSS</text>
+    <text class="m" x="140" y="0" text-anchor="end">0.07%</text>
+  </g>
+  <g class="fade" transform="translate(25 170)">
+    <circle cx="5" cy="-4" r="5" fill="#384d54"/>
+    <text class="l" x="18" y="0">Dockerfile</text>
+    <text class="m" x="140" y="0" text-anchor="end">0%</text>
+  </g>
+  <g class="fade" transform="translate(195 170)">
+    <circle cx="5" cy="-4" r="5" fill="#3B2F63"/>
+    <text class="l" x="18" y="0">Procfile</text>
+    <text class="m" x="140" y="0" text-anchor="end">0%</text>
+  </g>
+
+</svg>
